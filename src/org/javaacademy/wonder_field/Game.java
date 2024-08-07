@@ -4,13 +4,15 @@ import java.util.Scanner;
 
 public class Game {
 
-    private static final int GAMERS = 3;
-    private static final int ROUNDS = 4;
-    private static final int GROUP_ROUND = 3;
-    private static final int FINAL_ROUND_INDEX = 3;
+    public static final int GAMERS = 3;
+    public static final int ROUNDS = 4;
+    public static final int GROUP_ROUND = 3;
+    public static final int FINAL_ROUND_INDEX = 3;
     public static Scanner scanner = new Scanner(System.in);
     private String[] questions = new String[ROUNDS];
     private String[] answers = new String[ROUNDS];
+
+    Tableau tableau = new Tableau();
 
     public String[] getQuestions() {
         return questions;
